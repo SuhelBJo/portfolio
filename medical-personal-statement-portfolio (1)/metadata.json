@@ -1,0 +1,6 @@
+{
+  "name": "Medical Personal Statement Portfolio",
+  "description": "Academic personal statement, CV dossier, and research portfolio for Suhel Fadi Batarseh, MD Candidate at Jordan University of Science and Technology.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
