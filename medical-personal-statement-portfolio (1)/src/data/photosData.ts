@@ -120,16 +120,5 @@ export const academicPhotosList: AcademicPhoto[] = [
     aspectRatio: 'portrait',
     tags: ['UN Flag', 'Health Diplomacy', 'Youth Delegation'],
   },
-  {
-    id: 'un-assembly',
-    title: 'United Nations General Assembly Hall Session',
-    chapter: 'vision',
-    chapterLabel: 'Chapter III: Vision for the Future',
-    caption: 'Inside the historic United Nations General Assembly Hall during multilateral discussions on international cooperation and public health.',
-    location: 'General Assembly Hall, UN Headquarters, New York',
-    year: '2024',
-    defaultPath: '/images/suhel-un-assembly.jpg',
-    aspectRatio: 'portrait',
-    tags: ['UN General Assembly', 'Global Policy', 'Plenary'],
-  },
+ 
 ];
