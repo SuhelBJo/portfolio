@@ -61,7 +61,7 @@ export const PhotoSlotCard: React.FC<PhotoSlotCardProps> = ({
             <div className="w-11 h-11 rounded-full bg-white border border-[#CBD5E1] shadow-2xs flex items-center justify-center text-[#0F172A] mb-2 group-hover:scale-110 transition-transform">
               {getChapterIcon(photo.category)}
             </div>
-            <p className="text-xs font-bold text-[#0F172A] line-clamp-1">
+            <p className="text-xs font-bold text-[#0F172A]">
               {photo.title}
             </p>
             <span className="text-[10px] text-[#64748B] font-medium mt-0.5">
@@ -78,7 +78,7 @@ export const PhotoSlotCard: React.FC<PhotoSlotCardProps> = ({
       {/* Card Content & Metadata */}
       <div className="p-3.5 space-y-1.5 bg-white">
         <div className="flex items-start justify-between gap-1">
-          <h5 className="text-xs font-bold text-[#0F172A] line-clamp-1 group-hover:text-blue-900 transition-colors">
+          <h5 className="text-xs font-bold text-[#0F172A] group-hover:text-blue-900 transition-colors">
             {photo.title}
           </h5>
           <span className="text-[10px] text-[#64748B] font-medium shrink-0 bg-[#F1F5F9] px-1.5 py-0.5 rounded-md border border-[#E2E8F0]">
@@ -86,14 +86,14 @@ export const PhotoSlotCard: React.FC<PhotoSlotCardProps> = ({
           </span>
         </div>
 
-        <p className="text-[11px] text-[#64748B] line-clamp-2 leading-relaxed font-serif-editorial">
+        <p className="text-[11px] text-[#64748B] leading-relaxed font-serif-editorial">
           {photo.caption}
         </p>
 
         <div className="flex items-center justify-between pt-2 border-t border-[#F1F5F9] text-[10px]">
-          <div className="flex items-center gap-1 text-[#64748B] truncate">
+          <div className="flex items-center gap-1 text-[#64748B]">
             <MapPin className="w-3 h-3 text-[#0F172A] shrink-0" />
-            <span className="truncate">{photo.location}</span>
+            <span>{photo.location}</span>
           </div>
 
           <span className="text-[#0F172A] font-medium flex items-center gap-0.5 group-hover:underline">
