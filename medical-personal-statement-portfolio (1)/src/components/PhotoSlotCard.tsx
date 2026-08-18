@@ -16,7 +16,7 @@ export const PhotoSlotCard: React.FC<PhotoSlotCardProps> = ({
   onView,
 }) => {
   const [imgLoadError, setImgLoadError] = useState(false);
-  const hasPhoto = Boolean(customUrl && !imgLoadError);
+  const hasPhoto = Boolean((customUrl || photo.defaultPath) && !imgLoadError);
 
   const getChapterIcon = (category: string) => {
     switch (category) {
@@ -41,7 +41,7 @@ export const PhotoSlotCard: React.FC<PhotoSlotCardProps> = ({
         {hasPhoto ? (
           <>
             <img
-              src={customUrl!}
+             src={customUrl || photo.defaultPath}
               alt={photo.title}
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
