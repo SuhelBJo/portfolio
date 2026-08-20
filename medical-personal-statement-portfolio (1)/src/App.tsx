@@ -15,8 +15,27 @@ import { AudioNarrator } from './components/AudioNarrator';
 import { PhotoLightbox } from './components/PhotoLightbox';
 import { PhotoManagerModal } from './components/PhotoManagerModal';
 import { ChevronLeft, ChevronRight, BookOpen, Layers } from 'lucide-react';
+import { getTranslations, Language } from './data/i18n';
 
 export default function App() {
+  const [language, setLanguage] = useState<Language>(() => {
+    const saved = localStorage.getItem('portfolio-language');
+    return saved === 'ar' ? 'ar' : 'en';
+  });
+  const t = getTranslations(language);
+  const toggleLanguage = () => {
+    setLanguage((current) => {
+      const next = current === 'en' ? 'ar' : 'en';
+      localStorage.setItem('portfolio-language', next);
+      return next;
+    });
+  };
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+    document.documentElement.dir = t.languageDirection;
+  }, [language, t.languageDirection]);
+
   const [profile, setProfile] = useState<UserProfile>(() => {
     const saved = localStorage.getItem('med_statement_profile');
     if (saved) {
@@ -246,6 +265,8 @@ export default function App() {
         onOpenPrintModal={() => setIsPrintModalOpen(true)}
         profile={profile}
         onNavigateChapter={handleNavigateChapter}
+        language={language}
+        onToggleLanguage={toggleLanguage}
       />
 
       {/* Main Content Area */}

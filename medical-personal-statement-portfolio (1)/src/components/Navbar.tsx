@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Printer, Menu, X, ArrowUpRight } from 'lucide-react';
 import { Chapter, UserProfile } from '../types';
+import { getTranslations, Language } from '../data/i18n';
 
 interface NavbarProps {
   chapters: Chapter[];
@@ -8,6 +9,8 @@ interface NavbarProps {
   onOpenPrintModal: () => void;
   profile: UserProfile;
   onNavigateChapter: (chapterId: string) => void;
+  language: Language;
+  onToggleLanguage: () => void;
   // Optional legacy props for backwards compatibility
   onOpenPhotoManager?: () => void;
   isAudioPlaying?: boolean;
@@ -22,7 +25,10 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenPrintModal,
   profile,
   onNavigateChapter,
+  language,
+  onToggleLanguage,
 }) => {
+  const t = getTranslations(language);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -75,7 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   {profile.name}
                 </span>
                 <span className="text-[11.5px] text-[#64748B] font-medium tracking-tight">
-                  MD Candidate • JUST
+                  {t.candidate}
                 </span>
               </div>
             </a>
@@ -91,7 +97,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     : 'hover:text-[#0F172A] hover:bg-white/50'
                 }`}
               >
-                Overview
+                {t.overview}
               </button>
               {chapters.map((chapter) => {
                 const isActive = activeChapter === chapter.id;
@@ -120,20 +126,29 @@ export const Navbar: React.FC<NavbarProps> = ({
                     : 'hover:text-[#0F172A] hover:bg-white/50'
                 }`}
               >
-                Contact
+                {t.contact}
               </button>
             </nav>
 
-            {/* Action Buttons: PDF Dossier Only */}
+            {/* Action Buttons */}
             <div className="flex items-center gap-2">
+              <button
+                id="language-toggle"
+                onClick={onToggleLanguage}
+                className="hidden sm:inline-flex items-center px-3 py-1.5 rounded-lg border border-[#CBD5E1] text-xs font-semibold text-[#334155] hover:bg-[#F1F5F9] transition-colors cursor-pointer"
+                title={`Switch to ${t.switchLanguage}`}
+                aria-label={`Switch to ${t.switchLanguage}`}
+              >
+                {t.switchLanguage}
+              </button>
               <button
                 id="print-statement-btn"
                 onClick={onOpenPrintModal}
                 className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium bg-[#0F172A] text-white hover:bg-[#1E293B] transition-colors cursor-pointer shadow-xs"
-                title="Print or Save PDF Statement"
+                title="Print or save PDF statement"
               >
                 <Printer className="w-3.5 h-3.5 text-white" />
-                <span>PDF Dossier</span>
+                <span>{t.pdfDossier}</span>
               </button>
 
               {/* Mobile menu trigger */}
@@ -141,7 +156,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 id="mobile-menu-toggle"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="lg:hidden p-1.5 rounded-lg text-[#475569] hover:text-[#0F172A] hover:bg-[#E2E8F0] transition-colors cursor-pointer"
-                aria-label="Toggle Navigation Menu"
+                aria-label="Toggle navigation menu"
               >
                 {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -171,7 +186,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <div className="flex items-center justify-between pb-3 border-b border-[#E2E8F0]">
               <span className="text-xs font-semibold uppercase tracking-wider text-[#64748B]">
-                Reading Navigation
+                {t.readingNavigation}
               </span>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -190,15 +205,21 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="w-full py-2 px-3 rounded-xl bg-[#0F172A] text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-xs cursor-pointer"
             >
               <Printer className="w-4 h-4" />
-              <span>Open PDF Dossier & Statement</span>
+              <span>{t.openPdf}</span>
             </button>
 
+            <button
+              onClick={onToggleLanguage}
+              className="sm:hidden w-full py-2 px-3 rounded-xl border border-[#CBD5E1] text-[#334155] text-xs font-semibold cursor-pointer"
+            >
+              {t.switchLanguage}
+            </button>
             <div className="space-y-1">
               <button
                 onClick={() => handleChapterClick('hero')}
                 className="w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium text-[#334155] hover:bg-[#F1F5F9] hover:text-[#0F172A] flex items-center justify-between transition-colors cursor-pointer"
               >
-                <span>Overview & Title Deck</span>
+                <span>{t.overviewTitle}</span>
               </button>
 
               {chapters.map((chapter) => (
@@ -221,7 +242,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onClick={() => handleChapterClick('contact')}
                 className="w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium text-[#334155] hover:bg-[#F1F5F9] hover:text-[#0F172A] flex items-center justify-between transition-colors cursor-pointer"
               >
-                <span>Contact & Scholar Profiles</span>
+                <span>{t.contactProfiles}</span>
                 <ArrowUpRight className="w-4 h-4 text-[#94A3B8]" />
               </button>
             </div>
