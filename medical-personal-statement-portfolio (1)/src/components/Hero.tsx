@@ -51,7 +51,7 @@ export const Hero: React.FC<HeroProps> = ({ profile, onOpenPrintModal }) => {
   };
 
   return (
-    <section id="hero" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <section id="hero" className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 overflow-hidden">
       {/* Background Subtle Gradient & Grid lines */}
       <div className="absolute inset-0 pointer-events-none -z-10 opacity-30">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-[#0F172A]/8 via-[#E2E8F0]/40 to-transparent blur-3xl rounded-full" />
@@ -61,10 +61,12 @@ export const Hero: React.FC<HeroProps> = ({ profile, onOpenPrintModal }) => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
       >
+        <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-center text-left">
+        <div className="flex flex-col items-center lg:items-start">
         {/* Academic Tag & Status Badge */}
-        <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#CBD5E1] shadow-2xs text-xs font-medium text-[#0F172A] mb-8">
+        <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EFF6FF] border border-[#BFDBFE] text-xs font-medium text-[#1D4ED8] mb-6">
           <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
           <span>MD Candidate • Jordan University of Science and Technology</span>
           <span className="text-[#94A3B8]">•</span>
@@ -72,7 +74,7 @@ export const Hero: React.FC<HeroProps> = ({ profile, onOpenPrintModal }) => {
         </motion.div>
 
         {/* Circular Scholar Portrait Headshot */}
-        <motion.div variants={itemVariants} className="relative inline-block mx-auto mb-8">
+        <motion.div variants={itemVariants} className="relative inline-block mx-auto lg:mx-0 mb-8 lg:mb-0">
           <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full p-1.5 bg-gradient-to-b from-[#0F172A] via-[#334155] to-[#64748B] shadow-md transition-transform duration-300 hover:scale-105">
             <div className="w-full h-full rounded-full bg-[#F8FAFC] overflow-hidden border-2 border-white flex flex-col items-center justify-center relative">
               {profile.profileImageUrl && !imgError ? (
@@ -103,16 +105,18 @@ export const Hero: React.FC<HeroProps> = ({ profile, onOpenPrintModal }) => {
             <HeartPulse className="w-4 h-4 text-white" />
           </div>
         </motion.div>
+        </div>
 
+        <div>
         {/* Hero Title */}
         <motion.h1
           variants={itemVariants}
           id="hero-title"
-          className="text-4xl sm:text-5xl lg:text-6xl font-sans-display font-bold tracking-tight text-[#0F172A] leading-[1.15] mb-4"
+          className="text-4xl sm:text-5xl lg:text-6xl font-sans-display font-bold tracking-tight text-[#0F172A] leading-[1.08] mb-4"
         >
           {profile.name}
           <span className="block text-xl sm:text-2xl font-normal font-sans-display text-[#475569] mt-2">
-            Clinical Neuroscience, Surgical Innovation & Health Advocacy
+            A personal path into medicine
           </span>
         </motion.h1>
 
@@ -120,19 +124,19 @@ export const Hero: React.FC<HeroProps> = ({ profile, onOpenPrintModal }) => {
         <motion.p
           variants={itemVariants}
           id="hero-subtitle"
-          className="text-base sm:text-lg font-serif-editorial text-[#475569] max-w-2xl mx-auto leading-relaxed mb-10"
+          className="text-base sm:text-lg font-serif-editorial text-[#475569] max-w-2xl leading-relaxed mb-10"
         >
-          Medical student at Jordan University of Science and Technology and clinical researcher with 33+ peer-reviewed publications across <span className="font-semibold text-[#0F172A]">European Stroke Journal</span>, <span className="font-semibold text-[#0F172A]">Neurology</span>, and <span className="font-semibold text-[#0F172A]">Neurosurgery</span>. AHA Paul Dudley White International Scholar & RSNA Trainee Research Prize recipient.
+          I am a medical student, researcher, and volunteer who wants to make care more thoughtful and more useful for the people who need it. My work brings together clinical learning, brain research, and service.
         </motion.p>
 
         {/* Call to Action Buttons */}
-        <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-14">
+        <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3 sm:gap-4 mb-10">
           <button
             id="read-my-story-cta"
             onClick={scrollToChapter1}
             className="flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0F172A] text-white text-xs sm:text-sm font-semibold hover:bg-[#1E293B] shadow-xs hover:shadow-md transition-all duration-200 cursor-pointer hover:-translate-y-0.5"
           >
-            <span>Read Academic Statement</span>
+            <span>Read my story</span>
             <ArrowDown className="w-4 h-4 animate-bounce" />
           </button>
 
@@ -144,12 +148,12 @@ export const Hero: React.FC<HeroProps> = ({ profile, onOpenPrintModal }) => {
             className="flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-[#0F172A] border border-[#CBD5E1] text-xs sm:text-sm font-semibold hover:bg-[#F1F5F9] transition-all duration-200 cursor-pointer shadow-2xs hover:-translate-y-0.5"
           >
             <BookOpen className="w-4 h-4 text-[#0F172A]" />
-            <span>Google Scholar (33+ Studies)</span>
+            <span>View my research</span>
           </a>
         </motion.div>
 
         {/* Key Thematic Badges Grid */}
-        <motion.div variants={itemVariants} className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto text-left">
+        <motion.div variants={itemVariants} className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl text-left">
           <div className="bg-white border border-[#E2E8F0] p-3.5 rounded-xl shadow-2xs hover:shadow-md hover:border-[#CBD5E1] transition-all duration-200 hover:-translate-y-0.5">
             <span className="text-[11px] uppercase tracking-wider text-[#64748B] font-semibold block mb-1">
               Publications
@@ -182,6 +186,8 @@ export const Hero: React.FC<HeroProps> = ({ profile, onOpenPrintModal }) => {
             <p className="text-xs text-[#64748B] mt-0.5">1 of 15 selected globally</p>
           </div>
         </motion.div>
+        </div>
+        </div>
       </motion.div>
     </section>
   );

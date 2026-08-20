@@ -17,17 +17,6 @@
   }
 }
 
-html[dir='rtl'] body {
-  font-family: 'Noto Sans Arabic', 'Plus Jakarta Sans', Tahoma, sans-serif;
-  letter-spacing: 0;
-}
-
-html[dir='rtl'] .font-serif-editorial,
-html[dir='rtl'] .font-serif-heading {
-  font-family: 'Noto Sans Arabic', Tahoma, sans-serif;
-  letter-spacing: 0;
-}
-
 /* Authentic Human Academic Typography */
 .font-serif-editorial {
   font-family: 'Lora', Georgia, 'Times New Roman', serif;

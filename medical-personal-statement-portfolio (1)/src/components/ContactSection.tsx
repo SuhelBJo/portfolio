@@ -73,15 +73,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile, onOpenP
           className="text-center mb-12"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F1F5F9] border border-[#CBD5E1] text-xs font-semibold text-[#0F172A] mb-3">
-            <span>Get in Touch</span>
-            <span>•</span>
-            <span>Academic Collaboration & Contact</span>
+              <span>Get in touch</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-serif-heading font-normal text-[#0F172A] tracking-tight">
-            Connect, Collaborate & Review Full CV
+            Let’s stay in touch
           </h2>
           <p className="text-base text-[#475569] font-serif-editorial max-w-xl mx-auto mt-2">
-            Available for clinical neurology & neurosurgery inquiries, multicenter research collaborations, and academic exchange.
+            If you would like to talk about medicine, research, or working together, please send me a message.
           </p>
         </motion.div>
 
@@ -106,13 +104,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile, onOpenP
             </div>
             <div>
               <span className="text-xs font-semibold uppercase tracking-wider text-[#64748B] block mb-1">
-                Professional Network
+                LinkedIn
               </span>
               <p className="text-sm font-semibold text-[#0F172A] mb-1">Suhel Batarseh</p>
-              <p className="text-xs text-[#64748B]">LinkedIn • Clinical & Academic updates</p>
+              <p className="text-xs text-[#64748B]">My professional updates</p>
             </div>
             <div className="flex items-center gap-1 text-xs font-semibold text-[#0F172A] mt-4 group-hover:underline">
-              <span>View LinkedIn Profile</span>
+              <span>                View profile</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </div>
           </a>
@@ -133,10 +131,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile, onOpenP
                 Google Scholar
               </span>
               <p className="text-sm font-semibold text-[#0F172A] mb-1">33+ Publications</p>
-              <p className="text-xs text-[#64748B]">Full Citation Profile</p>
+              <p className="text-xs text-[#64748B]">                Research profile</p>
             </div>
             <div className="flex items-center gap-1 text-xs font-semibold text-[#0F172A] mt-4 group-hover:underline">
-              <span>Live Bibliography</span>
+              <span>                View research</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </div>
           </a>
@@ -338,10 +336,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile, onOpenP
                 <Download className="w-5 h-5 text-white" />
               </div>
               <h3 className="text-lg font-serif-heading font-semibold text-white mb-2">
-                Official PDF Dossier
+                Save the full portfolio
               </h3>
               <p className="text-xs text-slate-300 font-serif-editorial leading-relaxed mb-4">
-                View or export a formatted academic printout of this Personal Statement and CV dossier with formal institutional typography.
+                You can open or save a clean copy of this portfolio and personal statement.
               </p>
             </div>
 
@@ -350,7 +348,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile, onOpenP
               onClick={onOpenPrintModal}
               className="w-full py-2.5 px-4 rounded-xl bg-white text-[#0F172A] font-semibold text-xs hover:bg-[#F1F5F9] shadow-xs transition-all flex items-center justify-center gap-2 cursor-pointer hover:-translate-y-0.5"
             >
-              <span>View & Print Document</span>
+              <span>Open PDF</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </button>
           </div>
