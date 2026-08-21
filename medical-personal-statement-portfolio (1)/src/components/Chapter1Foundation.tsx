@@ -35,17 +35,17 @@ export const Chapter1Foundation: React.FC<Chapter1FoundationProps> = ({
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F1F5F9] border border-[#CBD5E1] text-xs font-semibold text-[#0F172A] mb-3 shadow-2xs">
             <span>Chapter I</span>
             <span>•</span>
-            <span>The Crucible</span>
+            <span>The Foundation</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-serif-heading font-normal text-[#0F172A] tracking-tight">
-            The Crucible: What the Bass Guitar and Crates Taught Me About Medicine
+            The Foundation: What the Bass Guitar and Crates Taught Me About Medicine
           </h2>
           <p className="text-sm text-[#64748B] mt-2 font-medium">
             Estimated Reading Time: 3 minutes • The Lessons ERAS Cannot Measure
           </p>
         </motion.div>
 
-        {/* Narrative Prose */}
+        {/* Text Section */}
         <div className="space-y-6 text-[#334155] font-serif-editorial text-base sm:text-lg leading-[1.8] text-justify">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -62,7 +62,7 @@ export const Chapter1Foundation: React.FC<Chapter1FoundationProps> = ({
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: 0.15 }}
           >
-            That belief started to change not in a lecture hall, but in two very different places that shaped who I am before I even stepped into the hospital. These places were the deep rhythmic focus of playing the bass guitar and the warehouse floor of the Food Bank of Delaware.
+            That belief started to change not in a lecture hall, but in two very different places that shaped who I am before I even stepped into the hospital. These places were playing the bass guitar and working on the warehouse floor of the Food Bank of Delaware.
           </motion.p>
 
           <motion.p
@@ -71,10 +71,10 @@ export const Chapter1Foundation: React.FC<Chapter1FoundationProps> = ({
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            For years, playing the bass guitar has been my primary creative outlet. Mastering the instrument taught me how to stay completely grounded and maintain a steady rhythm even when the tempo shifts unexpectedly. Playing music teaches you quickly that losing focus disrupts the whole group. You must listen closely, adapt to the other musicians in real time, and realize that every note carries weight. It taught me that true harmony requires a team, and you cannot create a complete sound alone.
+            For years, playing the bass guitar has been my main hobby. Playing music taught me how to stay grounded and keep a steady rhythm even when the tempo changes. It teaches you quickly that losing focus ruins the song for the whole group. You have to listen closely to the other musicians and adapt right away. It showed me that you need a team to make a complete sound, and you cannot do it all by yourself.
           </motion.p>
 
-          {/* Pivotal Growth Moment Quote */}
+          {/* Quote */}
           <motion.blockquote
             initial={{ opacity: 0, x: -16 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -100,11 +100,11 @@ export const Chapter1Foundation: React.FC<Chapter1FoundationProps> = ({
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: 0.15 }}
           >
-            It was a humbling lesson. I realized that medical skills do not mean much if you cannot connect with people in their actual lives. Working with those food crates in Delaware taught me teamwork, kindness, and the steady effort needed to solve real world problems. These are qualities that no test score or exam can truly measure.
+            It was a very real lesson. I realized that medical skills do not mean much if you cannot connect with people in their actual lives. Working with those food crates in Delaware taught me teamwork, kindness, and the steady effort needed to solve real world problems. These are qualities that no test score or exam can truly measure.
           </motion.p>
         </div>
 
-        {/* Curated Archival Photo Showcase */}
+        {/* Photos Section */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -115,7 +115,7 @@ export const Chapter1Foundation: React.FC<Chapter1FoundationProps> = ({
           <div className="flex items-center justify-between">
             <div>
               <h4 className="text-xs uppercase tracking-wider font-bold text-[#0F172A]">
-                Archival Record: Community Action & Civic Fellowship
+                Community Action & Civic Fellowship
               </h4>
               <p className="text-[11px] text-[#64748B] mt-0.5">
                 Food Bank of Delaware, MEPI Leadership, and Grassroots Outreach • Click any record to expand
@@ -137,11 +137,11 @@ export const Chapter1Foundation: React.FC<Chapter1FoundationProps> = ({
           </div>
 
           <p className="text-[11px] text-[#64748B] text-center italic mt-2">
-            Figure 1.1: Formative Groundwork. Hands-on community service with the Food Bank of Delaware, University of Delaware MEPI fellowship, and youth civic advocacy.
+            Figure 1.1: Direct community service with the Food Bank of Delaware, University of Delaware MEPI fellowship, and youth civic advocacy.
           </p>
         </motion.div>
 
-        {/* Core Principles Table / Takeaways */}
+        {/* Summary Boxes */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -151,7 +151,7 @@ export const Chapter1Foundation: React.FC<Chapter1FoundationProps> = ({
         >
           <h3 className="text-sm font-semibold text-[#0F172A] tracking-wider uppercase mb-4 flex items-center gap-2">
             <Shield className="w-4 h-4 text-[#0F172A]" />
-            <span>Reflections Beyond the Score Sheet</span>
+            <span>Reflections Beyond the Clinic</span>
           </h3>
           <div className="grid sm:grid-cols-3 gap-4 text-left">
             <div className="bg-white p-4 rounded-lg border border-[#E2E8F0] hover:border-[#CBD5E1] transition-all hover:shadow-xs">
@@ -184,7 +184,7 @@ export const Chapter1Foundation: React.FC<Chapter1FoundationProps> = ({
           </div>
         </motion.div>
 
-        {/* Chapter Transition Footer */}
+        {/* Footer */}
         <div className="mt-12 pt-8 border-t border-[#E2E8F0] flex items-center justify-between">
           <span className="text-xs font-medium text-[#64748B]">
             End of Chapter I
