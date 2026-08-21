@@ -53,7 +53,7 @@ export const Chapter4Vision: React.FC<Chapter4VisionProps> = ({
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            When program directors evaluate an application, scores and publication counts establish baseline competence. But when a ward is overwhelmed at 3:00 AM, when multiple high-acuity admissions arrive simultaneously, or when an exhausted co-resident is struggling through a personal emergency, what matters is not a Step score—it is character, reliability, and emotional poise.
+            When program directors evaluate an application, scores and publication counts establish baseline competence. But when a ward is overwhelmed at 3:00 AM, when multiple high acuity admissions arrive simultaneously, or when an exhausted co resident is struggling through a personal emergency, what matters is not a Step score. It is character, reliability, and emotional poise.
           </motion.p>
 
           <motion.p
@@ -83,7 +83,7 @@ export const Chapter4Vision: React.FC<Chapter4VisionProps> = ({
                     1. Unflappable Composure in High-Stakes Chaos
                   </h4>
                   <p className="text-sm text-[#475569] font-serif-editorial leading-relaxed">
-                    Ten years of national tournament chess drilled a permanent habit: when the clock runs down, you breathe, analyze the board without panic, and execute the highest-probability decision. In the ICU or acute neurology bay, this means staying calm, structured, and focused on patient stabilization.
+                    Years of playing the bass guitar drilled a permanent habit: when the tempo changes unexpectedly, you breathe, listen without panic, and maintain the steady rhythm the team needs. In the ICU or acute neurology bay, this means staying calm, structured, and focused on patient stabilization.
                   </p>
                 </div>
               </div>
@@ -102,10 +102,10 @@ export const Chapter4Vision: React.FC<Chapter4VisionProps> = ({
                 </div>
                 <div>
                   <h4 className="text-base font-serif-heading font-semibold text-[#0F172A] mb-1">
-                    2. A Culture of Peer Support & Cross-Disciplinary Respect
+                    2. A Culture of Peer Support & Cross Disciplinary Respect
                   </h4>
                   <p className="text-sm text-[#475569] font-serif-editorial leading-relaxed">
-                    I believe great residency teams run on mutual respect and gratitude. From nursing staff and respiratory therapists to co-interns, I pride myself on clear communication, stepping in to take an extra admission when a colleague is drowning, and fostering a positive, blame-free learning atmosphere.
+                    I believe great residency teams run on mutual respect and gratitude. From nursing staff and respiratory therapists to co interns, I pride myself on clear communication, stepping in to take an extra admission when a colleague is drowning, and fostering a positive, blame free learning atmosphere.
                   </p>
                 </div>
               </div>
@@ -127,7 +127,7 @@ export const Chapter4Vision: React.FC<Chapter4VisionProps> = ({
                     3. Translational Inquisitiveness Without Ego
                   </h4>
                   <p className="text-sm text-[#475569] font-serif-editorial leading-relaxed">
-                    Having led 33+ peer-reviewed meta-analyses across premier journals, I do not see research as academic decoration. I use it as a practical tool to question assumptions, evaluate clinical trials critically, and improve bedside clinical outcomes for our patients.
+                    Having led 33+ peer reviewed meta analyses across premier journals, I do not see research as academic decoration. I use it as a practical tool to question assumptions, evaluate clinical trials critically, and improve bedside clinical outcomes for our patients.
                   </p>
                 </div>
               </div>
@@ -146,10 +146,10 @@ export const Chapter4Vision: React.FC<Chapter4VisionProps> = ({
               The One Thing to Remember
             </span>
             <h4 className="text-lg font-serif-heading font-semibold text-white mb-2">
-              A Resident Who Combines Grandmaster Focus with Grassroots Humility
+              A Resident Who Combines Deep Focus with Grassroots Humility
             </h4>
             <p className="text-sm sm:text-base text-slate-300 font-serif-editorial leading-relaxed">
-              “If there is one thing you remember from my application, let it be this: I am a resident who will show up early, stay late to comfort an anxious family, support my co-residents unconditionally, and dedicate every ounce of my energy to advancing the standard of care for our patients.”
+              “If there is one thing you remember from my application, let it be this: I am a resident who will show up early, stay late to comfort an anxious family, support my co residents unconditionally, and dedicate every ounce of my energy to advancing the standard of care for our patients.”
             </p>
           </motion.div>
 
@@ -159,7 +159,7 @@ export const Chapter4Vision: React.FC<Chapter4VisionProps> = ({
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Clinical medicine is the highest privilege I know. I am eager to bring my work ethic, analytical discipline, and deep-seated humanity to your residency family, growing into a clinician and academic leader your institution will be proud of.
+            Clinical medicine is the highest privilege I know. I am eager to bring my work ethic, analytical discipline, and deep seated humanity to your residency family, growing into a clinician and academic leader your institution will be proud of.
           </motion.p>
         </div>
 
@@ -174,7 +174,7 @@ export const Chapter4Vision: React.FC<Chapter4VisionProps> = ({
           <div className="flex items-center justify-between">
             <div>
               <h4 className="text-xs uppercase tracking-wider font-bold text-[#0F172A]">
-                Global Health Diplomacy: United Nations Delegations
+                Global Health Diplomacy
               </h4>
               <p className="text-[11px] text-[#64748B] mt-0.5">
                 UN Headquarters New York, SDG Sustainable Health Goals, and Plenary Sessions • Click any record to expand
@@ -182,7 +182,7 @@ export const Chapter4Vision: React.FC<Chapter4VisionProps> = ({
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
             {visionPhotos.map((photo) => (
               <PhotoSlotCard
                 key={photo.id}
@@ -196,7 +196,7 @@ export const Chapter4Vision: React.FC<Chapter4VisionProps> = ({
           </div>
 
           <p className="text-[11px] text-[#64748B] text-center italic mt-2">
-            Figure 3.1 — Global Health Diplomacy & Policy: United Nations Headquarters New York, SDG 3 Sustainable Health Goals, and UN General Assembly Hall.
+            Figure 3.1: Global Health Diplomacy & Policy. United Nations Headquarters New York, SDG 3 Sustainable Health Goals, and UN General Assembly Hall.
           </p>
         </motion.div>
 
@@ -234,7 +234,7 @@ export const Chapter4Vision: React.FC<Chapter4VisionProps> = ({
             }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-[#CBD5E1] text-[#0F172A] text-xs font-semibold hover:bg-[#F1F5F9] transition-all cursor-pointer shadow-2xs hover:-translate-y-0.5"
           >
-            <span>← Previous: Chapter II — The Transformation</span>
+            <span>← Previous: Chapter II</span>
           </button>
 
           <button
