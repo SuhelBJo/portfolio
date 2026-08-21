@@ -21,7 +21,7 @@ export const chapters: Chapter[] = [
     id: 'foundation',
     number: 'Chapter I',
     title: 'The Foundation',
-    subtitle: 'Competitive Chess, Grassroots Humility & What ERAS Cannot Measure',
+    subtitle: 'Music, Grassroots Humility & What ERAS Cannot Measure',
     readingTime: '3 min read',
   },
   {
