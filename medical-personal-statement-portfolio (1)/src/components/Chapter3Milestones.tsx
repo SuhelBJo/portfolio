@@ -33,7 +33,7 @@ export const Chapter3Milestones: React.FC<Chapter3MilestonesProps> = ({
 
   const categories = [
     { id: 'all', label: 'All Records', count: milestones.length },
-    { id: 'research', label: 'Peer-Reviewed Studies', count: milestones.filter(m => m.category === 'research').length },
+    { id: 'research', label: 'Peer Reviewed Studies', count: milestones.filter(m => m.category === 'research').length },
     { id: 'award', label: 'Awards & Honors', count: milestones.filter(m => m.category === 'award').length },
     { id: 'leadership', label: 'Global Fellowships', count: milestones.filter(m => m.category === 'leadership').length },
     { id: 'clinical', label: 'Clinical & Advocacy', count: milestones.filter(m => m.category === 'clinical').length },
@@ -109,7 +109,7 @@ export const Chapter3Milestones: React.FC<Chapter3MilestonesProps> = ({
             Selected Research Samples, Honors & Global Delegations
           </h2>
           <p className="text-sm text-[#475569] mt-2 max-w-2xl mx-auto font-serif-editorial leading-relaxed">
-            Featured highlights and representative studies from a comprehensive portfolio of <span className="font-semibold text-[#0F172A]">33+ peer-reviewed publications</span> across <em>European Stroke Journal</em>, <em>Neurology</em>, <em>Neurosurgery</em>, and <em>Circulation</em>.
+            Featured highlights and representative studies from a comprehensive portfolio of <span className="font-semibold text-[#0F172A]">33+ peer reviewed publications</span> across <em>European Stroke Journal</em>, <em>Neurology</em>, <em>Neurosurgery</em>, and <em>Circulation</em>.
           </p>
         </motion.div>
 
@@ -134,7 +134,7 @@ export const Chapter3Milestones: React.FC<Chapter3MilestonesProps> = ({
                 Complete Academic Bibliography on Google Scholar
               </h3>
               <p className="text-xs text-slate-300 max-w-xl font-serif-editorial leading-relaxed">
-                The milestones showcased below are representative study samples. For the complete, real-time citation index, full author list, and all 33+ journal articles and meta-analyses, please explore the official Google Scholar profile.
+                The milestones showcased below are representative study samples. For the complete, real time citation index, full author list, and all 33+ journal articles and meta analyses, please explore the official Google Scholar profile.
               </p>
             </div>
           </div>
@@ -393,7 +393,7 @@ export const Chapter3Milestones: React.FC<Chapter3MilestonesProps> = ({
             }}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0F172A] text-white text-xs font-semibold hover:bg-[#1E293B] transition-all shadow-xs cursor-pointer hover:-translate-y-0.5"
           >
-            <span>Next: Chapter IV — Vision for the Future</span>
+            <span>Next: Chapter IV: Vision for the Future</span>
             <span>→</span>
           </button>
         </div>
