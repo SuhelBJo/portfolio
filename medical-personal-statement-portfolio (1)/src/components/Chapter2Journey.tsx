@@ -62,7 +62,7 @@ export const Chapter2Journey: React.FC<Chapter2JourneyProps> = ({
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: 0.15 }}
           >
-            A 62-year-old retired schoolteacher arrived with complaints of a mild, non-specific headache and slight fatigue. His initial vital signs were stable, and preliminary laboratory values were completely unremarkable. On paper, he looked ready for routine observation. But as I sat by his bed to complete his cranial nerve exam, I asked him about his family. As he answered, I noticed something subtle: a faint hesitation when completing multi-syllabic words, accompanied by an intermittent pronator drift in his left forearm that vanished when he focused.
+            A 62 year old retired schoolteacher arrived with complaints of a mild, non specific headache and slight fatigue. His initial vital signs were stable, and preliminary laboratory values were completely unremarkable. On paper, he looked ready for routine observation. But as I sat by his bed to complete his cranial nerve exam, I asked him about his family. As he answered, I noticed something subtle: a faint hesitation when completing multisyllabic words, accompanied by an intermittent pronator drift in his left forearm that vanished when he focused.
           </motion.p>
 
           <motion.p
@@ -90,7 +90,7 @@ export const Chapter2Journey: React.FC<Chapter2JourneyProps> = ({
               Why Research Became a Clinical Necessity, Not a Resume Item
             </h4>
             <p className="text-sm sm:text-base text-[#475569] font-serif-editorial leading-relaxed">
-              “Watching that patient walk out of the hospital days later with his speech fully intact taught me that the central nervous system does not offer second chances. When clinicians face conflicting evidence—such as exact surgical timing for intracerebral hemorrhage or robotic stereotactic evacuation—the answers cannot be guessed. Co-authoring studies in the <strong className="text-[#0F172A] font-semibold">European Stroke Journal</strong>, <strong className="text-[#0F172A] font-semibold">Neurology</strong>, and <strong className="text-[#0F172A] font-semibold">Circulation</strong> was born directly from this urgency: turning bedside uncertainties into quantified, life-saving evidence.”
+              “Watching that patient walk out of the hospital days later with his speech fully intact taught me that the central nervous system does not offer second chances. When clinicians face conflicting evidence, such as exact surgical timing for intracerebral hemorrhage or robotic stereotactic evacuation, the answers cannot be guessed. Co-authoring studies in the <strong className="text-[#0F172A] font-semibold">European Stroke Journal</strong>, <strong className="text-[#0F172A] font-semibold">Neurology</strong>, and <strong className="text-[#0F172A] font-semibold">Circulation</strong> was born directly from this urgency: turning bedside uncertainties into quantified, life saving evidence.”
             </p>
           </motion.div>
 
@@ -109,7 +109,7 @@ export const Chapter2Journey: React.FC<Chapter2JourneyProps> = ({
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: 0.15 }}
           >
-            When the American Heart Association recognized our work from Jordan with the Paul Dudley White International Scholar Award, what mattered most was not the plaque itself, but the knowledge that four years of rigorous data synthesis could directly protect stroke patients in resource-limited settings worldwide.
+            When the American Heart Association recognized our work from Jordan with the Paul Dudley White International Scholar Award, what mattered most was not the plaque itself, but the knowledge that four years of rigorous data synthesis could directly protect stroke patients in resource limited settings worldwide.
           </motion.p>
         </div>
 
@@ -146,7 +146,7 @@ export const Chapter2Journey: React.FC<Chapter2JourneyProps> = ({
           </div>
 
           <p className="text-[11px] text-[#64748B] text-center italic mt-2">
-            Figure 2.1 — Clinical & Academic Synthesis: Bedside reflex diagnostics, inpatient hospital clerkships at JUST, and peer-reviewed international scientific conferences.
+            Figure 2.1: Clinical & Academic Synthesis. Bedside reflex diagnostics, inpatient hospital clerkships at JUST, and peer-reviewed international scientific conferences.
           </p>
         </motion.div>
 
@@ -164,7 +164,7 @@ export const Chapter2Journey: React.FC<Chapter2JourneyProps> = ({
               <span>Evidence Driven by Bedside Questions</span>
             </div>
             <p className="text-xs text-[#64748B] leading-relaxed">
-              Synthesizing clinical trial data across stroke, epilepsy, and ALS not for academic volume, but to give attending teams actionable, life-saving answers under time pressure.
+              Synthesizing clinical trial data across stroke, epilepsy, and ALS not for academic volume, but to give attending teams actionable, life saving answers under time pressure.
             </p>
           </div>
 
@@ -174,7 +174,7 @@ export const Chapter2Journey: React.FC<Chapter2JourneyProps> = ({
               <span>Global Rigor, Grounded Humility</span>
             </div>
             <p className="text-xs text-[#64748B] leading-relaxed">
-              Selected among 15 international fellows for EAN Europe and awarded the AHA Paul Dudley White Scholar award—applying global gold standards to frontline patient care.
+              Selected among 15 international fellows for EAN Europe and awarded the AHA Paul Dudley White Scholar award. Applying global gold standards to frontline patient care.
             </p>
           </div>
         </motion.div>
@@ -198,7 +198,7 @@ export const Chapter2Journey: React.FC<Chapter2JourneyProps> = ({
             }}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0F172A] text-white text-xs font-semibold hover:bg-[#1E293B] transition-all shadow-xs cursor-pointer hover:-translate-y-0.5"
           >
-            <span>Next: Chapter III — What I Bring to Your Team</span>
+            <span>Next: Chapter III: What I Bring to Your Team</span>
             <span>→</span>
           </button>
         </div>
